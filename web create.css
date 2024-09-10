@@ -1,0 +1,241 @@
+@import url('https://fonts.googleapis.com/css?family=Poppins');
+
+*{
+    margin: 0%;
+    padding: 0%;
+    box-sizing: border-box;
+}
+.navbar{
+    position: absolute;
+    top: 0%;
+    left: 0%;
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+    padding: 20px;
+    color: rgb(0, 0, 0);
+}
+ul{
+    list-style: none;
+    cursor: pointer;
+
+}
+.active{
+    color: red;
+    text-decoration: underline;
+    font-weight: bold;
+}
+.nav-links{
+    display: flex;
+    align-items: center;
+}
+.nav-links li{
+    margin: 0 30px;
+}
+header{
+    width: 100%;
+    height: 100vh;
+    background-image: url(/project-1/travel_HD.jpg);
+    background-position: bottom;
+    background-size: cover;
+    display: flex;
+    align-items: flex-end;
+    justify-content: center;
+}
+
+a{
+    text-decoration: none;
+}
+.header-content{
+    margin-bottom: 150px;
+    color: whitesmoke;
+    text-align: center;
+
+}
+.header-content h2{
+    font-size: 4vmin;
+}
+.line{
+    width: 150px;
+    height: 4px;
+    background: red;
+    margin: 10px auto;
+    border-radius: 5px;
+}
+.header-content h1{
+    font-size: 7vmin;
+    margin-top: 50px;
+    margin-bottom: 30px;
+}
+.ctn{
+   padding: 8px 15px;
+    background-color: red;
+    border-radius: 30px;
+    color: whitesmoke;
+}
+.icon{
+    position: absolute;
+    top: 30px;
+    right: 30px;
+    width: 40px;
+    font-size: 35px;
+    cursor: pointer;
+    display:none
+}
+
+
+@media only screen and (max-width:850px){
+    .navbar{
+        padding: 0;
+        color: rgb(15, 14, 14);
+    }
+    .logo{
+        position: absolute;
+        top: 30px;
+        left: 30px;
+    }
+    .nav-links{
+        flex-direction: column;
+        width: 100%;
+        height: 100vh;
+        margin-top: -900px;
+        justify-content: center;
+        background-color: rgb(88, 22, 151)
+        
+        
+    }
+    .nav-links li{
+        margin: 30px auto;
+    }
+    .icon{
+        display: block;
+    }
+   .mobile-menu{
+    margin-top: 0px;
+   }
+    
+}
+/* about */
+.about {
+    padding: 60px 0;
+    background-color: #f8f8f8;
+  }
+  
+  .about-main{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 15px;
+  }
+  
+  .about-content {
+    flex: 1;
+    padding: 20px;
+  }
+  
+  .about-content h2 {
+    font-size: 36px;
+    margin-bottom: 20px;
+    color: #333;
+  }
+  
+  .about-content p {
+    font-size: 16px;
+    color: #555;
+    line-height: 1.6;
+    margin-bottom: 20px;
+  }
+  
+  .about-content .btn {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #ff6347;
+    color: #fff;
+    text-decoration: none;
+    border-radius: 5px;
+    transition: background-color 0.3s;
+  }
+  
+  .about-content .btn:hover {
+    background-color: #ff4500;
+  }
+  
+  .about-image {
+    flex: 1;
+    padding: 20px;
+    text-align: center;
+  }
+  
+  .about-image img {
+    max-width: 100%;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  }
+
+/* footer css */
+.footer {
+    background-color: #333;
+    color: #fff;
+    padding: 20px 0;
+    text-align: center;
+  }
+  
+  .footer .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+  }
+  
+  .footer-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    max-width: 1200px;
+    margin: 0 auto;
+  }
+  
+  .footer-left h3 {
+    font-size: 24px;
+    margin-bottom: 10px;
+  }
+  
+  .footer-left p {
+    margin: 0;
+    font-size: 16px;
+  }
+  
+  .footer-right {
+    display: flex;
+  }
+  
+  .social-icons {
+    list-style: none;
+    padding: 0;
+    display: flex;
+    gap: 15px;
+  }
+  
+  .social-icons li {
+    display: inline-block;
+  }
+  
+  .social-icons a {
+    color: #fff;
+    font-size: 18px;
+    transition: color 0.3s;
+  }
+  
+  .social-icons a:hover {
+    color: #ff6347;
+  }
+  
+  .footer-bottom {
+    margin-top: 20px;
+    font-size: 14px;
+    opacity: 0.8;
+  }
